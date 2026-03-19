@@ -9,3 +9,4 @@ pypdf
 docx2txt
 python-dotenv
 pysqlite3-binary
+openai
