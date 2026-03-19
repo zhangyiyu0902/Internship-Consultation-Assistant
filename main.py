@@ -7,9 +7,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
-from dotenv import load_dotenv
 
-load_dotenv()  # 自动寻找并加载 .env 文件
 
 # 禁用所有日志输出
 import logging
