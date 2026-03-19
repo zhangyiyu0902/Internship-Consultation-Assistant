@@ -18,4 +18,4 @@ EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 LLM_MODEL = "qwen3-max"
 BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
-OPENAI_API_KEY="sk-3b998a250f5b4b48820881504200198e"
+OPENAI_API_KEY = "sk-3b998a250f5b4b48820881504200198e"
