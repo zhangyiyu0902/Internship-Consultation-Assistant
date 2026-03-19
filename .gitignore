@@ -1,0 +1,6 @@
+__pycache__/
+.env
+db/
+chroma_db/
+PERSIST_DIR/
+*.pyc
