@@ -1,9 +1,9 @@
 # config.py
 
 FILE_PATHS = [
-    "E:/钢研实习/实习相关文档/新入职实习生流程.docx",
-    "E:/钢研实习/实习相关文档/治理平台操作手册2.0.docx",
-    "E:/钢研实习/实习相关文档/网宿零信任客户端登录说明.docx"
+    "新入职实习生流程.docx",
+    "治理平台操作手册2.0.docx",
+    "网宿零信任客户端登录说明.docx"
 ]
 
 SUPPORTED_EXTENSIONS = ['.pdf', '.docx', '.doc', '.txt', '.md', '.csv']
