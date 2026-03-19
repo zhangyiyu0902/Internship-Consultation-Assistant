@@ -12,7 +12,13 @@ from rag.retrieval_chain import create_chain
 from rag.qa import ask
 import os
 
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+# 1. 优先尝试从 Streamlit 云端 Secrets 读取
+if "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+else:
+    st.error("❌ 未能在云端 Secrets 中找到 OPENAI_API_KEY，请前往 Settings -> Secrets 配置。")
+    st.stop()
+
 # ================== 页面配置 ==================
 st.set_page_config(
     page_title="实习生智能助手",
