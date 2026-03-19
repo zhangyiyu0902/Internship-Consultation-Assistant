@@ -10,6 +10,10 @@ from processing.text_splitter import split_documents
 from vectorstore.chroma_store import load_or_create_vectorstore
 from rag.retrieval_chain import create_chain
 from rag.qa import ask
+import os
+
+# 这行代码会将 secrets 里的内容转为环境变量，OpenAI SDK 就能自动识别了
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # ================== 页面配置 ==================
 st.set_page_config(
